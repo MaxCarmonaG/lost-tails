@@ -1,0 +1,15 @@
+{
+  "name": "lost-pet-finder",
+  "version": "1.0.0",
+  "main": "data-structure.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "firebase": "^11.2.0"
+  }
+}

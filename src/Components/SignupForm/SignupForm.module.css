@@ -1,0 +1,117 @@
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25rem;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formControl {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.formControl label {
+  font-weight: 700;
+}
+
+.formControl input {
+  border: 1px solid #e7e7e7;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formControl input:focus-visible {
+  outline-color: #0078cd;
+}
+
+.formControl input.errorInput {
+  border: 2px solid var(--error-color);
+}
+
+.formControl input.errorInput:focus-visible {
+  outline-color: var(--error-color);
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+.errorMessage {
+  color: var(--error-color);
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: -1.5rem;
+}
+
+.errorSubmit {
+  color: var(--error-color);
+  position: absolute;
+  bottom: -1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.rememberControl {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.rememberControl label {
+  cursor: pointer;
+}
+
+.rememberControl input {
+  margin-right: 0.5rem;
+}
+
+.formSubmit {
+  align-self: center;
+  width: 100%;
+  max-width: 18rem;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.termsLink {
+  color: #ff6600;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.termsLink:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .rememberControl {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .row {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}

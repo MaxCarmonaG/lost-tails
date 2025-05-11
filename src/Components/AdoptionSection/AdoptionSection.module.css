@@ -1,0 +1,63 @@
+.adoptionSection {
+  background-color: var(--light-orange-color2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-block: 3rem;
+  min-height: 50rem;
+}
+
+.adoptionText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+}
+
+.adoptionText h2 {
+  color: var(--text-color);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.exampleCards {
+  /* display: grid;
+  grid-template-columns: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .adoptionSection {
+    height: 85vh;
+    padding-bottom: 5rem;
+  }
+
+  .adoptionText {
+    font-size: 1.2rem;
+  }
+
+  .exampleCards {
+    flex-direction: row;
+    padding-block: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .exampleCards {
+    gap: 4rem;
+  }
+
+  .adoptionSection {
+    height: 90vh;
+  }
+}

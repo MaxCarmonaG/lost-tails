@@ -1,0 +1,34 @@
+.formControl {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+
+  & label {
+    font-weight: 700;
+
+    &[aria-required='true'] {
+      &::after {
+        content: '*';
+        color: var(--error-color);
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
+  & input {
+    height: 3rem;
+  }
+}
+
+.errorMessage {
+  color: var(--error-color);
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: -1.5rem;
+  word-spacing: 1px;
+}
+
+.errorMessage::first-letter {
+  text-transform: capitalize;
+}

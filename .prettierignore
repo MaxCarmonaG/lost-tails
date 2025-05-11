@@ -1,0 +1,23 @@
+# Ignore dependencies and build output
+node_modules
+dist
+build
+
+# Ignore env files
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore logs
+npm-debug.log
+
+# Ignore lock files (optional)
+package-lock.json
+
+# Ignore editor and OS-specific files
+.DS_Store
+.vscode
+
+# Ignore assets
+src/assets

@@ -1,0 +1,67 @@
+.section {
+  padding: 2rem 0;
+  background-color: var(--light-orange-color3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sectionInfo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  & h1 {
+    font-size: 2.3rem;
+  }
+}
+
+.banner {
+  width: 100%;
+  max-width: 45rem;
+  height: fit-content;
+}
+
+.sectionMainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sectionLastDonations {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: fit-content;
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    gap: 4rem;
+  }
+
+  .sectionMainContent {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
+
+  .banner {
+    max-width: 55rem;
+  }
+}

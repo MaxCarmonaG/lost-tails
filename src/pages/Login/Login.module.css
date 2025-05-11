@@ -1,0 +1,108 @@
+.section {
+  background-color: #f2968f;
+  padding: 2.5rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  align-items: flex-end;
+}
+
+.formContainer {
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  max-width: 48rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.486);
+}
+
+.formHeader {
+  text-align: center;
+
+  & h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.separator {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  max-width: 9.5rem;
+  height: 1px;
+  background-color: var(--grey-color);
+  flex: 1;
+}
+
+.createAccount {
+  font-weight: 700;
+  text-align: center;
+
+  & a {
+    color: var(--primary-color);
+    text-decoration: none;
+
+    &:hover {
+      filter: brightness(85%);
+    }
+  }
+}
+
+.loginAnimation {
+  display: none;
+}
+
+.googleButton {
+  align-self: center;
+  width: 100%;
+  max-width: 18rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .formContainer {
+    padding: 5rem;
+  }
+
+  .formHeader {
+    text-align: start;
+  }
+
+  .googleButton {
+    max-width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .loginAnimation {
+    display: block;
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .loginAnimation {
+    display: block;
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .loginAnimation {
+    width: 38rem;
+    height: 38rem;
+  }
+}

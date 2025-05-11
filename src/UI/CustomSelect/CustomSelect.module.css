@@ -1,0 +1,35 @@
+.label {
+  text-transform: capitalize;
+
+  &[aria-required='true'] {
+    &::after {
+      content: '*';
+      color: var(--error-color);
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.validationWrapper {
+  position: relative;
+  display: grid;
+}
+
+.errorMessage {
+  color: var(--error-color);
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: -1.5rem;
+  word-spacing: 1px;
+}
+
+.errorMessage::first-letter {
+  text-transform: capitalize;
+}

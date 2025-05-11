@@ -1,0 +1,55 @@
+.heroSection {
+  padding: 4rem 0;
+  background-color: var(--light-blue-color);
+  min-height: 85vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.heroImage {
+  border-radius: 30px;
+  background-color: #047eba;
+  margin-bottom: 2rem;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: center;
+
+  & h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+  }
+}
+
+.heroButtons {
+  display: flex;
+  column-gap: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .heroImage {
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .heroImage {
+    width: 45rem;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .heroImage {
+    width: 55rem;
+  }
+}

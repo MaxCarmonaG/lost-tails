@@ -1,0 +1,53 @@
+.container {
+  width: 16rem;
+  height: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.486);
+}
+
+.name {
+  height: 28px;
+  margin: 4px;
+  width: 80%;
+  border-radius: 10px;
+  background: var(--loading-bg-color);
+  background-size: var(--loading-bg-size);
+  animation: var(--loading-animation);
+}
+
+.location {
+  height: 18px;
+  margin: 2px;
+  width: 60%;
+  border-radius: 10px;
+  background: var(--loading-bg-color);
+  background-size: var(--loading-bg-size);
+  animation: var(--loading-animation);
+}
+.picture {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  margin-bottom: 0.75rem;
+  background: var(--loading-bg-color);
+  background-size: var(--loading-bg-size);
+  animation: var(--loading-animation);
+}
+
+.link {
+  height: 27px;
+  width: 160px;
+  border-radius: 10px;
+  background: var(--loading-bg-color);
+  background-size: var(--loading-bg-size);
+  animation: var(--loading-animation);
+}

@@ -1,0 +1,45 @@
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25rem;
+  margin: 0 auto;
+}
+
+.errorSubmit {
+  color: var(--error-color);
+  position: absolute;
+  bottom: -1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.rememberControl {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+
+  & label {
+    cursor: pointer;
+  }
+
+  & input {
+    margin-right: 0.5rem;
+  }
+}
+
+.formSubmit {
+  align-self: center;
+  width: 100%;
+  max-width: 18rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .rememberControl {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

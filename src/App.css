@@ -1,0 +1,70 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* font setup */
+h1,
+h2,
+h3,
+h4,
+button,
+label {
+  font-family: 'Poppins', sans-serif;
+}
+
+p,
+a,
+input,
+span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Our color scheme.  We can rename these. */
+:root {
+  --primary-color: #ed6b5b;
+  --secondary-color: #3a3e59;
+  --light-orange-color: #f9ac68;
+  --light-orange-color2: #fceed5;
+  --light-orange-color3: #fffaf1;
+  --dark-orange-button: #d73520;
+  --light-orange-color4: #fffcf8;
+  --off-white-background-color: #ece6ce;
+  --text-color: #333;
+  --white-color: #ffffff;
+  --grey-color: #c4c4c4;
+  --error-color: #ff4d4f;
+  --light-blue-color: #dfefff;
+
+  /* loading animation data */
+  --loading-bg-color: linear-gradient(
+    90deg,
+    rgba(51, 51, 51, 0.4) 0%,
+    rgba(51, 51, 51, 0.2) 50%,
+    rgba(51, 51, 51, 0.4) 100%
+  );
+  --loading-bg-size: 200% 100%;
+  --loading-animation: loading 4s infinite linear;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}

@@ -1,0 +1,94 @@
+.section {
+  background-color: #f4a261;
+  padding: 2.5rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  align-items: flex-end;
+}
+
+.formContainer {
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  max-width: u;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.486);
+}
+
+.formHeader {
+  text-align: center;
+}
+
+.formHeader h2 {
+  margin-bottom: 1rem;
+}
+
+.createAccount {
+  font-weight: 700;
+  text-align: center;
+}
+
+.createAccount span {
+  color: var(--primary-color);
+}
+
+.signupAnimation {
+  display: none;
+}
+
+.loginRedirect {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.loginLink {
+  color: #ff6600;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.loginLink:hover {
+  color: #cc5500;
+}
+
+@media only screen and (min-width: 768px) {
+  .formContainer {
+    padding: 3rem;
+  }
+
+  .formHeader {
+    text-align: start;
+  }
+
+  .formHeader h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .signupAnimation {
+    display: block;
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .signupAnimation {
+    width: 32rem;
+    height: 32rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .signupAnimation {
+    width: 42rem;
+    height: 42rem;
+  }
+}

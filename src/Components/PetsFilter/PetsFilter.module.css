@@ -1,0 +1,37 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.select :global(.ant-select) {
+  min-width: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .aside {
+    row-gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .control {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: flex-start;
+    row-gap: 2rem;
+  }
+
+  .select {
+    flex-direction: column;
+    row-gap: 0.5rem !important;
+    align-items: flex-start !important;
+  }
+}
